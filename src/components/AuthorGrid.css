@@ -1,0 +1,22 @@
+.author-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.author-card {
+  background-color: #eee;
+  padding: 10px;
+  text-align: center;
+}
+
+.author-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.author-card h3 {
+  margin-top: 10px;
+}
