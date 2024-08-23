@@ -1,18 +1,19 @@
+// src/App.tsx
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom"; // 최신 버전의 react-router-dom 사용
-import Header from "./components/Header"; // Header 컴포넌트 임포트
-import AuthorsPage from "./pages/AuthorsPage"; // AuthorsPage 컴포넌트 임포트
-import "./App.css"; // 글로벌 스타일 파일
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import AuthorPage from "./pages/AuthorPage";
+import WorksPage from "./pages/WorkPage"; // 작품정보 페이지 추가
+import "./App.css";
+import "antd/dist/reset.css"; // 최신 버전의 CSS 파일
 
 const App: React.FC = () => {
   return (
     <Router>
-      {/* Header는 모든 페이지에서 공통으로 보여지므로 Routes 외부에 위치시킴 */}
-      <Header />
       <Routes>
-        {/* /authors 경로에 AuthorPage 컴포넌트를 렌더링 */}
-        <Route path="/authors" element={<AuthorsPage />} />
-        {/* 다른 경로 추가 시 아래에 Route 컴포넌트 추가 */}
+        <Route path="/" element={<AuthorPage />} />
+        <Route path="/works" element={<WorksPage />} />
+        {"http://localhost:5173/works"}
+        <Route path="/works" element={<WorksPage />} />
       </Routes>
     </Router>
   );

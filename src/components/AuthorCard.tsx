@@ -1,6 +1,5 @@
 // src/components/AuthorCard.tsx
 import React from "react";
-
 interface AuthorProps {
   id: number;
   name: string;

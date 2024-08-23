@@ -1,6 +1,6 @@
 // src/components/Tabs.tsx
 import React, { useState } from "react";
-import "./Tabs.css"; // 스타일 파일을 추가로 만드실 경우에 필요합니다.
+import "./Tabs.css";
 
 const Tabs: React.FC = () => {
   const [activeTab, setActiveTab] = useState("글작가");

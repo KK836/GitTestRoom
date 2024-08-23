@@ -1,17 +1,19 @@
+/* src/pages/AuthorPage.tsx */
 import React from "react";
 import Header from "../components/Header";
 import Tabs from "../components/Tabs";
 import AuthorGrid from "../components/AuthorGrid";
-import "./AuthorsPage.css";
+import Footer from "../components/Footer";
 
-const AuthorsPage: React.FC = () => {
+const AuthorPage: React.FC = () => {
   return (
     <>
       <Header />
       <Tabs />
       <AuthorGrid />
+      <Footer />
     </>
   );
 };
 
-export default AuthorsPage;
+export default AuthorPage;

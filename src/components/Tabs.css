@@ -1,14 +1,19 @@
+/* src/components/Tabs.css */
 .tabs {
-  display: flex;
+  display: inline-flex;
   justify-content: center;
-  margin-top: 20px;
+  background-color: #f0f0f0;
+  padding: 100px;
+  margin-top: -110px;
+  z-index: 999; /* 헤더보다 낮은 z-index */
+  background-color: transparent; /* 배경색 제거 */
 }
 
 .tabs button {
-  background-color: #ddd;
+  /* background-color: #ddd; */
   border: none;
   padding: 10px 20px;
-  margin: 0 5px;
+  margin: 0 10px;
   cursor: pointer;
 }
 
